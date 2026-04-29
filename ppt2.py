@@ -30,7 +30,7 @@ for i in range(6):  # biar gak terlalu banyak
     plt.scatter(a, f(a))
     plt.scatter(b, f(b))
 
-    # garis lurus dari a ke b (INI YANG KAMU MAU)
+    # garis lurus dari a ke b 
     x_line = np.linspace(a, b, 10)
     y_line = f(a) + (f(b) - f(a)) * (x_line - a) / (b - a)
     plt.plot(x_line, y_line, linestyle="--", label="Garis Regula Falsi")
